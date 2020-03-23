@@ -11,14 +11,19 @@ function leinita() {
             hola[i] = numeros;
         }
 
-        return `<h4>leina con un puntaje de ${hola[0]} </h4>
+        return `<h4>leina con un puntaje de <span>${hola[0]}<span> </h4>
         <h4>camila con un puntaje de ${hola[1]} </h4>
-        <h4>antonio con un puntaje de ${hola[2]} </h4>`;
+        <h4>antonio con un puntaje de ${hola[2]}`;
+        // return `leina con un puntaje de <span>${hola[0]}<span>,
+        // <br>
+        // camila con un puntaje de ${hola[1]}
+        // <br>
+        // antonio con un puntaje de ${hola[2]}`;
     };
 
     return calcularArray([
         [3, 4, 6, 1000],
-        [3, 0, 3300, 56],
+        [-1, -5, -6, -2],
         [2, 5, 4, 200]
     ]);
     // console.log(
@@ -31,10 +36,13 @@ function leinita() {
 }
 
 leinita();
+var mostrar = leinita();
 
-const boton = document.getElementsByClassName("boton");
-document.addEventListener("click", e => {
-    e.preventDefault();
+const modificar = document.querySelector(".resultado__ganadores");
+const boton = document.querySelector(".button");
+const presionar = () => {
+    // document.write(mostrar);
+    modificar.innerHTML = mostrar;
+};
 
-    document.write(leinita() + "holalasss");
-});
+boton.addEventListener("click", presionar);
