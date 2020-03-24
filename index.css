@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+
 .modalidades {
     display: flex;
     justify-content: space-evenly;
@@ -10,4 +12,19 @@
 .button {
     display: block;
     margin: auto;
+    background-color: #CE93D8;
+}
+
+body {
+    font-family: 'Bellota';
+    background-color: #E3F2FD;
+}
+
+.modalidades ul li{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.modalidades ul{
+    font-size: 30px;
 }

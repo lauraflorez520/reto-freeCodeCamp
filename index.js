@@ -21,6 +21,8 @@ function leinita() {
         [3, 0, 3300, 56],
         [2, 5, 4, 200]
     ]);
+
+
     // console.log(
     //     calcularArray([
     //         [3, 4, 6, 8],
@@ -38,3 +40,6 @@ document.addEventListener("click", e => {
 
     document.write(leinita() + "holalasss");
 });
+
+
+ 
