@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .modalidades {
     display: flex;
@@ -20,11 +24,33 @@ body {
     background-color: #E3F2FD;
 }
 
-.modalidades ul li{
+.resultado__ganadores {
+    background: burlywood;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span {
+    color: royalblue;
+}
+
+.modalidades ul li {
     text-decoration: none;
     font-size: 20px;
 }
 
-.modalidades ul{
+.modalidades ul {
     font-size: 30px;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.participantes {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
