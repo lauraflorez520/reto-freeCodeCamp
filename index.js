@@ -1,6 +1,6 @@
-function leinita() {
+function principal() {
     const calcularArray = alumno => {
-        var hola = [];
+        var result = [];
         for (var i = 0; i < alumno.length; i++) {
             var numeros = alumno[i][0];
             for (var j = 1; j < alumno[i].length; j++) {
@@ -8,13 +8,13 @@ function leinita() {
                     numeros = alumno[i][j];
                 }
             }
-            hola[i] = numeros;
+            result[i] = numeros;
         }
 
-        return `<section><article class="participante__uno participantes"><img src="./img/imagen1.jpg" alt="" class="img"><h4 class="participantes">leina con un puntaje de <span>${hola[0]}<span> </h4></article>
-        <article class="participante__dos participantes"><img src="./img/imagen2.jpg" alt="" class="img"><h4 class="participantes">camila con un puntaje de ${hola[1]} </h4></article></section>
-        <section><article class="participante__tres participantes"><img src="./img/imagen3.jpg" alt="" class="img"><h4 class="participantes">antonio con un puntaje de ${hola[2]} </h4></article>
-        <article class="participante__cuatro participantes"><img src="./img/imagen4.jpg" alt="" class="img"><h4 class="participantes">Mario con un puntaje de <span>${hola[3]} </h4></article></section>`;
+        return `<section><article class="participante__uno participantes"><img src="./img/imagen1.jpg" alt="" class="img"><h4 class="participantes">leina con un puntaje de <span>${result[0]}<span> </h4></article>
+        <article class="participante__dos participantes"><img src="./img/imagen2.jpg" alt="" class="img"><h4 class="participantes">camila con un puntaje de ${result[1]} </h4></article></section>
+        <section><article class="participante__tres participantes"><img src="./img/imagen3.jpg" alt="" class="img"><h4 class="participantes">antonio con un puntaje de ${result[2]} </h4></article>
+        <article class="participante__cuatro participantes"><img src="./img/imagen4.jpg" alt="" class="img"><h4 class="participantes">Mario con un puntaje de <span>${result[3]} </h4></article></section>`;
         // return `leina con un puntaje de <span>${hola[0]}<span>,
         // <br>
         // camila con un puntaje de ${hola[1]}
@@ -38,8 +38,8 @@ function leinita() {
     // );
 }
 
-leinita();
-var mostrar = leinita();
+principal();
+var mostrar = principal();
 
 const modificar = document.querySelector(".resultado__ganadores");
 const boton = document.querySelector(".button");
