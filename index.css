@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bellota&display=swap");
 * {
     margin: 0;
     padding: 0;
+}
+
+.titulo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    margin-top: 30px;
 }
 
 .modalidades {
@@ -16,13 +25,16 @@
 .button {
     display: block;
     margin: auto;
-    background-color: #CE93D8;
+    background-color: #ce93d8;
     margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 body {
-    font-family: 'Bellota';
-    background-color: #E3F2FD;
+    font-family: "Bellota";
+    background-color: #e3f2fd;
 }
 
 .resultado__ganadores {
